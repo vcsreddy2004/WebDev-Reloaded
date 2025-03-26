@@ -1,0 +1,31 @@
+* {
+    margin:0px;
+}
+.outter {
+    width:30%;
+    background-color: #008000;
+    height: 300px;
+    /* padding: 40px 20px 75px 50px;
+    margin: 10px 20px 30px 100px; */
+    margin:auto;
+    /*
+        padding inner spacing
+        margin outter spacing
+        padding/margin:
+                all (common in usuage)
+                vertical,horizontal (common)
+                top,horizontal,bottom (uncommon)
+                top,right,bottom,left (clock wise) (kind of common)
+        or
+        [padding/margin]-[direction]:20px;
+                direction => top,right,bottom,left
+        ex: padding-top:30px;
+        margin:auto; => equals left margin and right margin
+    */
+}
+.inner {
+    width:30%;
+    background-color: red;
+    color:white;
+    height: 60%;
+}

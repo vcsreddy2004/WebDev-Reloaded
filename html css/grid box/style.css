@@ -1,0 +1,62 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-box {
+    width:60vw;
+    height:40vh;
+    margin:auto;
+    margin-top: 20vh;
+    color:whitesmoke;
+    font-size: 3rem;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr; */
+    grid-template-columns: repeat(4,15vw);
+    grid-template-rows: 2fr 1fr 3fr;
+    /* row-gap:3vh;
+    column-gap:0.7vw; */
+    gap:5%;
+}
+.grid-box-1  {
+    width: 60vw;
+    margin:auto;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 10vw 20vw;
+    row-gap: 2vh;
+    column-gap: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    grid-template-columns => defines total number of columns and width of each column
+    grid-template-rows => defines width of height of each row but do not define total number of rows
+        units that can used on bost grid-template-columns grid-template-rows
+            fr => fractional units that efficiently devide the space into fractional parts
+    row-gap => maintains gap between row
+    colums-gap => maintains gap between column
+    gap => sets same gap for both row and column
+    justify-content => used to align grid elements horizontally (justify-items used in flex layout)
+                start,end,center,stretch(default)
+    align-items => used to align grid elements vertically (same as flex layout)
+                start,end,center,stretch(default)
+*/
+.grid-item-1 {
+    background-color: fuchsia;
+}
+.grid-item-2 {
+    background-color: teal;
+}
+.grid-item-3 {
+    background-color: coral;
+}
+.grid-item-4 {
+    background-color: salmon;
+}
+.grid-item-5 {
+    background-color: crimson;
+}
+.grid-item-6 {
+    background-color: olivedrab;
+}

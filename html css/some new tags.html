@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Hello World
+        </title>
+    </head>
+    <body>
+        <abbr title="Hiper Text Markup Language">HTML</abbr>
+        <div title="Cascading Style Sheet">CSS</div>
+        <p> <kbd>CTRL</kbd> + <kbd>l</kbd></p>
+        <input type="text" list="colors" />
+        <datalist id="colors">
+            <option value="red"></option>
+            <option value="green"></option>
+            <option value="blue"></option>
+            <option value="yellow"></option>
+        </datalist>
+        <dialog id="dialog" style="background-color: green; color:white; border:none; width:500px;">
+            <h1>
+                Hello World
+            </h1>
+            <p>
+                Hi this is dialogue box 
+            </p>
+            <button onclick="document.getElementById('dialog').close()">Close</button>
+        </dialog>
+        <details>
+            <summary>
+                detail box
+            </summary>
+            <div>
+                <h2>
+                    Hi this is detail box
+                </h2>
+            </div>
+        </details>
+        <ruby>
+            main text
+            <rt>
+                top text
+            </rt>
+        </ruby>
+        <progress></progress>
+        <meter mit="20" max="100" value="40"></meter>
+        <progress max="100" value="70"></progress>
+        <fieldset>
+            <legend>Box with title</legend>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus adipisci id, culpa sunt incidunt ad quidem saepe dicta labore nam cum officiis nisi neque fugiat iusto magni! Aspernatur perspiciatis, enim molestias alias ipsum repudiandae dicta error tempora impedit pariatur ipsa vitae iusto rem accusantium aliquam mollitia ex facilis aut labore hic fugit unde eos, distinctio repellat? Minus vitae odio, libero maiores sapiente nam dicta! Error architecto, voluptatem, quam repellat, molestiae autem id iusto quae officiis aliquid at cupiditate aut aspernatur hic facilis expedita impedit? Voluptate soluta labore reiciendis sunt asperiores quaerat eos, quas mollitia ad aspernatur fugiat! Ipsa repudiandae rem natus itaque facilis rerum neque assumenda eligendi deserunt dolorem ipsam id quidem inventore dolorum quas sed, earum maxime dolor? Assumenda, perferendis sequi quis recusandae sed a blanditiis. Ipsum, placeat numquam rem laboriosam deleniti optio ex debitis labore fugit culpa tenetur consequuntur officiis, iusto delectus neque nisi. Maiores explicabo totam blanditiis labore, vel non tenetur autem maxime. Quis consequatur impedit eveniet aspernatur molestiae similique enim iure vel sit sint corrupti, magni ex error incidunt atque, optio doloribus debitis facere quas id qui nemo alias inventore expedita. Distinctio tempora fugit sequi autem vitae voluptates similique commodi iusto quae, illum dolore odit.                 
+            </div>
+        </fieldset>
+    </body>
+    <script>
+        window.onload = function() {
+            var dialog = document.getElementById('dialog');
+            dialog.showModal();
+        }
+    </script>
+</html>

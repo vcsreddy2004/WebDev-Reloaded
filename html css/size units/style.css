@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main {
+    background-color: black;
+    height: 9   0vh;
+    width: 70vw;
+    overflow: auto;
+}
+.inner {
+    background-color: green;
+    max-width:700px;
+    background-color: green;
+    color:white;
+    min-height: 200px;
+    overflow: auto;
+}
+.outer {
+    width:500px;
+    height: 300px;
+    background-color: red;
+}
+.rems {
+    width:500px;
+    background-color: coral;
+    color:white;
+    font-size: 10px;
+}
+.rems p {
+    font-size: 2rem;
+}
+.ems {
+    width:500px;
+    background-color: purple;
+    color:white;
+    font-size: 10px;
+}
+.ems p {
+    font-size: 2em;
+}
+h1 {
+    background-color: deeppink;
+    color:white;
+    line-height: 200%;
+}
+/*
+    max-width do not exceed width of parent even if you mention more width than parent width
+    Note => inline elements wont work max-width by default you have to set width:100%; along with max-width then it works ex images 
+
+    min-width dot not shrinks more than given width but expand as parent width 
+    similar we can set ma/min-height
+
+    unita
+    ========================================================================================
+    Absolute units => px,pt,in,cm,mm
+    Relative units => %,em,rem,vh,vw
+
+    rem
+        it doubles the size of root element
+    em
+        it doubles the size of parent element
+    vh
+        It is visual height depend on parent or window height same as %height
+    vw
+        It is visual width depend on parent or window width same as %width
+
+    units use cases
+    ========================================================================================
+    pixels => border radius,border,letter spacing,logo and icons,max-width,shadows
+    percentages => main containers,images,border radius
+    rems => text,margin,padding (more common than ems)
+    ems => margin,padding
+    vh => section
+    vw => text
+    
+    Note =>  Is is best practice to use combination of max-width and width. width in percentage and max-width with pixels
+            2) If you mention width 100% it fits to parent div
+            3) It is essential to use width 100% to image along with max-width to ensure to avoid overflow
+*/

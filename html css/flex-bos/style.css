@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-box {
+    width:80vw;
+    margin:auto;
+    height: 70vh;
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+}
+.flex-box-2 {
+    width:80vw;
+    margin:auto;
+    margin-top:50px;
+    height: 70vh;
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+/*  
+    flex-direction row
+        justify-content:
+            flex-start => align to left
+            flex-end => align to right
+            center => align to center
+            space-between => maintain space between sub box 
+            space-around => devide  
+            space-evenly => maintain equal space around sub boxes
+        align-items:
+            stretch => all height is equal to parent height when no height is set to child
+            flex-start => aligns top
+            flex-end => align-bottom
+            canter => align vertically center
+    if flex-direction column
+        justify-content and align-items will interchange 
+    align-self => used to align single element 
+            flex-start => align start
+            flex-end => align end
+            stretch => take full width if no width mentioned
+            center => align center
+    order => reorders the elements acording to order value
+    flex-wrap => they form another line for flex items
+        no wrap => default no line form 
+        wrap => forms a new line
+        wrap-reverse => reverse the lines of flex boxes
+    align-content => used to align multiple rows of content
+        stretch,flex-start,flex-end,center  
+        Note => they work if height is not mentioned
+*/
+.flex-item-1 {
+    width:400px;
+    /* height: 300px; */
+    background-color: green;
+    /* order:1; */
+}
+.flex-item-2 {
+    width:200px;
+    /* height: 100px; */
+    background-color: aqua;
+    align-self: flex-end;
+    /* order:0; */
+}
+.flex-item-3 {
+    width:200px;
+    /* height: 400px; */
+    background-color: blue;
+    /* order:2; */
+}
+.flex-item-4 {
+    width:300px;
+    /* height: 200px; */
+    background-color: blueviolet;
+    /* order:3; */
+}
+.flex-item-5 {
+    width:400px;
+    /* height: 420px; */
+    background-color: brown;
+    /* order:4; */
+}
+.flex-box-3 {
+    width:80vw;
+    height: 30vh;
+    background-color: teal;
+    margin:auto;
+    margin-top:30px;
+    display: flex;
+    color:white;
+    margin-bottom: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2vh;
+}
+.flex-box-3 input {
+    background-color: black;
+    color:white;    
+    padding: 10px 20px;
+}

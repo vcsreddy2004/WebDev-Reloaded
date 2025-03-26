@@ -1,0 +1,64 @@
+h1 
+{
+    font-weight: 900;
+    /*
+                100,200,300 .... 900
+                300-400 for text
+                500-900 for headings
+    */
+}
+p 
+{
+    font-weight: 100;
+    text-align: justify; /* used to avoid innconsistency in line eding */
+    /* 
+        text-align: left,center,right,justify
+    */
+    line-height: 1.5;
+    /*
+        heading <1.5
+        paragraph 1.5-2 for readability
+        usually paragraph line-height is greater than heading line-height
+    */
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+.text-decoration 
+{
+    text-decoration: underline rgb(113, 0, 105) wavy; 
+    /* 
+        text-decoration:underline color dotted;
+                        overline  color dashed; 
+                        line-through color double;
+                                     color wavy;
+    */
+}
+.font-italic 
+{
+    font-style: italic;
+}
+.text-transformations {
+    text-transform: capitalize;
+    /*
+                    uppercase,lowercase,none
+    */
+}
+.list-style {
+    list-style: circle;
+    /*
+                circle,square,decimal,none
+    */
+}
+
+/*
+    text-size
+            62px=>h1
+            48px=>h2
+            40px=>h3
+            32px=>h4
+            24px=>h5
+            20px=>p
+            16px=>a
+            12px=>small
+    12px*1.25 = 16px like wise
+*?

@@ -1,0 +1,57 @@
+/*
+    pseudo classes defines styles for a given sepcific state
+    or condition of an HTML Element
+*/
+/*
+    State example
+    :hover 
+        => styles applies when a cursor hovers  an Element
+    :active 
+        => styles button after clicked but last for only few mili seconds
+    Note => hover and active can work on any element
+    :link
+        => styles applied when the anchor tag is not visited
+    :visited
+        => styles applied when the anchor tag is visited
+    Note => link and visited works only on anchor tags
+    Note => make sure :link should writen before :hover code because due to cascade :hover is overwriten by :link you will not see :hover effects
+    Condition example
+    :first-child
+        => it selects first Element
+    :last-child
+        => it selects last element
+    :nth-child(n)
+        => it selects nth element
+        => we can also pass condition like 2n,3n,2n+1 for n=[0,1,2,.....no fo elements]
+*/
+.a:link {
+    color:red;
+}
+.a:hover {
+    color:green
+}
+.a:visited {
+    color: coral;
+}
+.btn {
+    background-color: green;
+    color:white;
+}
+.btn:hover {
+    background-color: red;
+}
+.btn:active {
+    background-color: black;
+}
+div h3:first-child {
+    background-color:green;
+}
+div h3:last-child {
+    background-color: red;
+}
+div h3:nth-child(4) {
+    background-color: coral;
+}
+div h3:nth-child(2n) {
+    color:deeppink;
+}

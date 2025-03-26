@@ -1,0 +1,72 @@
+* {
+    margin:30px;
+}
+/*
+    above margin property is overwritten with style2.css
+*/
+p {
+    background-color: green;
+    color:white;
+}
+/*
+    due to cascade property of CSS it takes latest styles.
+    as in this example second style blue is taken as background color due to cascade.
+    non cascade styles are styles are remain same   
+*/
+p {
+    background-color: blue;
+}
+h1,h2 { /* multiple tags selector it selects both h1 and h2 to apply common styles */
+    background-color:red;
+    color:white;
+    padding: 5px;
+}
+h1 {/* due to cascading we can apply the unique styles separately */
+    text-decoration: line-through green;
+}
+h2 {
+    text-decoration: underline green wavy;
+}
+.c-yellow {
+    color:yellow;
+}
+
+/*
+    descendant selector
+    ex div p
+        => selects all p elements which are child to div
+    direct descendant selector
+    ex div > p
+        => selects only imediate children p elements not sub children
+    adjacent sibiling selector
+    ex h1 + p
+        => if h1 and p are sblilings and are side by side then it selects
+    general sibilibg selector
+    ex h1 ~ p
+        => h1 and p have to be sibiling no need to stay side by side
+*/
+/*
+    specifity
+        => specificity also nothing but priority
+        ex 
+            .class-of-p {
+                color:red;
+            ]
+            p {
+                color:green;
+            }
+        => acording to sepcifity .class-of-p has more priority so p tag with class specified contain red color 
+        => it overwrites rule of cascade
+*/
+div p {
+    background-color: red;
+}
+h1 + p {
+    text-decoration: underline blue wavy;
+}
+div > p {
+    color:green;
+}
+h1 ~ p {
+    font-family: Impact;
+}

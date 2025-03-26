@@ -1,0 +1,19 @@
+* {
+    margin:0px;
+}
+/*
+    due to linking this file after style1.css all styles are overwriten by style2.css
+    non overwriten styles are remains same as style1.css
+*/
+/*
+    ___________________________________________________________________________________________
+   |       Body tag and inheritance               |            The universal selector(*)       |
+   |___________________________________________________________________________________________|
+   |      only applies text properties            |            Applies all properties          |
+   |___________________________________________________________________________________________|
+   |     used to set deafult properties           |          used to reset default styles      |
+   |            across application                |                                            |
+   |______________________________________________|____________________________________________|
+   |       It is used to apply styles             |          It is used to remove styles       |
+   |______________________________________________|____________________________________________|
+*?

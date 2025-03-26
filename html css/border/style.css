@@ -1,0 +1,18 @@
+* {
+    margin:0px;
+}
+.main {
+    width: 300px;
+    height: 300px;
+    /* border:7px double red; */
+    border-top:5px dotted green;
+    border-left:7px dashed  red;
+    border-bottom:10px double coral;
+    border-right:20px solid blueviolet;
+    border-radius: 70px;
+    text-align: center;
+    /* 
+        we can apply single to all borders are we can apply different border styles to different directions
+        if width and height of div is same just like square then use border radius half of width of square to form circle
+    */
+}
