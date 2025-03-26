@@ -1,3 +1,7 @@
+/*
+    NOTE => UNDERSTAND FLEX LAYOUT THEN YOU CAN EASILY GET GRID LAYOUT
+*/
+*/
 * {
     margin:0;
     padding: 0;
@@ -39,7 +43,6 @@
     gap => sets same gap for both row and column
     justify-content => used to align grid elements horizontally (justify-items used in flex layout)
                 start,end,center,stretch(default),space-between,space-around,space-evenly
-    Note => understand flex layout then you can easily get understand grid layout
     align-items => used to align grid elements vertically (same as flex layout)
                 start,end,center,stretch(default)
     align-content => used to align gird elements in column axis (same as flex layout)
