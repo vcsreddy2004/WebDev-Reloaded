@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+    transform
+        scale(x,y) => enlarges the component 
+            width = x*eidth
+            height = y*height
+        skew(x,y) => skew on x and y axis
+            (x,y) have to mention in deg (ex (30deg,20deg))
+        rotate(30deg) => rotates on z-index
+            deg have to mention in order to apply     
+        translate(x,y) => moves from initial position
+            x,y => moves x on x-axis y on y-axis   
+*/
+.card {
+    color:white;
+    margin:auto;
+    margin-top:30px;
+}
+.card-scaled {
+    width:20vw;
+    height: 20vh;
+    background-color: teal;
+    transform: scale(2,1.1);
+}
+.card-skewed {
+    width:20vw;
+    height: 20vh;
+    background-color: crimson;
+    transform: skew(10deg,0);
+}
+.card-rotated {
+    width:30vw;
+    height: 30vh;
+    background-color: thistle;
+    transform: rotate(40deg);
+}
+.card-translate {
+    width: 30vw;
+    height: 20vh;
+    background-color: aquamarine;
+    transform: translate(70px,50px);
+}

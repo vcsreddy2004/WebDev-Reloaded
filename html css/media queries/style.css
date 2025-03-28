@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 /*
-    0px,500px,1000px,1500px
+    >1536px => larger screen => 2XL
+    1280px<>1536px => large laptops => XL
+    1024px<>1280px => small laptop => LG
+    968px<>1024px => tablet => MD
+    576px<>968px => phone Landscape => SM
+    <576px => porttrait phone => XS
     
     @media is used to adjust styles according to screen size.Above are standard screen sizes used in designing
 */

@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+    position 
+        relative => it is relative to sibling elements
+        absolute => It is not relative to sibling it relates to parent element if parent position mentioned
+        fixed => it wont move along with elements while scrolling
+        sticky => they move on scrolling but stick on given top value 
+    Z-index => here elements place in z-axis starts forom -1 to ~ (z-index works if position mentioned)
+*/
+.card {
+    z-index:0;
+    width:50vw;
+    background-color: teal;
+    color:white;
+    margin:auto;
+    margin-top:30px;
+    position: relative;
+}
+.inner-1 {
+    width:20vw;
+    background-color: olive;
+    position: relative;
+    z-index:2;
+}
+.inner-2 {
+    width:40vw;
+    background-color: sienna;
+    position: absolute;
+    z-index: 1;
+    top:10px;
+    left:20px;
+}
+.inner-3 {
+    width:20vw;
+    background-color: peru;
+    position: relative;
+    z-index:2;
+}

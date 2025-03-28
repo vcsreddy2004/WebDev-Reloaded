@@ -1,0 +1,30 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card {
+    width:20vw;
+    height:20vh;
+    color:white;
+    font-size: 5rem;
+    text-align: center;
+    align-content: center;
+    background-color: crimson;
+    margin:auto;
+    margin-top:30px;
+    box-shadow: 3px 5px 12px crimson;
+    text-shadow: 2px 3px 10px black;
+}
+/*
+    box-shadow:x y blur_radius spread_radius color;
+               x y blur_radius color;
+            x,y => required other values optional 
+            color black(default) if not set
+        x => moves horizontally nagative value goes right positive value goes left
+        y => moves vertivally negative value goes top positive value goes bottom
+        blur_radius => blurs the shadow
+        spread_radius => increase the size of shadow 
+        color => sets color
+    text-shadow => same properties apply as box shadow
+*/

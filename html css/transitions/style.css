@@ -1,0 +1,68 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card {
+    width:20vw;
+    height:10vh;
+    color:white;
+    font-size: 3rem;
+    text-align: center;
+    align-content: center;
+    background-color: crimson;
+    margin:auto;
+    margin-top:30px;
+    transition: text-shadow 1s ease-out;
+}
+.ease {
+    font-size: 3rem;
+    transition: border-radius 1s ease;
+}
+.ease:hover {
+    border-radius: 50%;
+}
+.ease-in {
+    font-size: 3rem;
+    transition: border-radius 1s ease-in;
+}
+.ease-in:hover {
+    border-radius: 50%;
+}
+.ease-out {
+    font-size: 3rem;
+    transition: border-radius 1s ease-out;
+}
+.ease-out:hover {
+    border-radius: 50%;
+}
+.ease-in-out {
+    font-size: 3rem;
+    transition: border-radius 1s ease-in-out;
+}
+.ease-in-out:hover {
+    border-radius: 50%;
+}
+.linear {
+    font-size: 3rem;
+    transition: border-radius 5s linear;
+}
+.linear:hover {
+    border-radius: 50%;
+}
+/*
+    transition: timing;
+                property timing,property timing;
+                property timing function;
+        function
+            ease => starts slowly speeds up and then slows down
+            linear => consistent speed start to end
+            ease-in => starts slowely and accelerate to the end
+            ease out => starts quickly and slows down towards the end
+            ease-in-out => starts slowely speeds up in the middle and slows down at the end
+*/
+.card:hover {
+    cursor: pointer;
+    box-shadow: 3px 5px 12px crimson;
+    text-shadow: 2px 3px 10px black;
+}
