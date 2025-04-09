@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Debounce vs Throttle</title>
+        <style>
+            body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f0f4f8;
+            }
+            .box {
+            background: white;
+            padding: 20px 40px;
+            border-radius: 12px;
+            margin: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            }
+            h1 {
+            margin-bottom: 30px;
+            }
+            .label {
+            font-weight: bold;
+            font-size: 18px;
+            }
+            .count {
+            font-size: 36px;
+            margin-top: 10px;
+            color: #007acc;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Debounce vs Throttle (Move Your Mouse)</h1>
+        
+        <div class="box">
+            <div class="label">Debounced Count</div>
+            <div class="count" id="debounceCount">0</div>
+        </div>
+
+        <div class="box">
+            <div class="label">Throttled Count</div>
+            <div class="count" id="throttleCount">0</div>
+        </div>
+
+        <script>
+            const debounceCountEl = document.getElementById('debounceCount');
+            const throttleCountEl = document.getElementById('throttleCount');
+            let debounceCount = 0;
+            let throttleCount = 0;
+            function debounce(func, delay) {
+                let timer;
+                return function (...args) {
+                    clearTimeout(timer);
+                    timer = setTimeout(() => func.apply(this, args), delay);
+                };
+            }
+            function throttle(func, limit) {
+                let lastCall = 0;
+                return function (...args) {
+                    const now = Date.now(); 
+                    if (now - lastCall >= limit) {
+                    lastCall = now;
+                    func.apply(this, args);
+                    }
+                };
+            }
+            const incrementDebounce = () => {
+                debounceCount++;
+                debounceCountEl.textContent = debounceCount;
+            };
+
+            const incrementThrottle = () => {
+                throttleCount++;
+                throttleCountEl.textContent = throttleCount;
+            };
+            document.addEventListener('mousemove', debounce(incrementDebounce, 500));
+            document.addEventListener('mousemove', throttle(incrementThrottle, 500));
+        </script>
+    </body>
+</html>
