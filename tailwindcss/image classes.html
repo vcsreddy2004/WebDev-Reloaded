@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            cursor
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+        <div class="w-3/4 grid grid-cols-2 gap-5 m-auto mt-5">
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Blur
+            </div>
+            <img src="./images/profile.jpg" class="blur-xs" />
+            <img src="./images/profile.jpg" class="blur-sm" />
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Brightness
+            </div>
+            <img src="./images/profile.jpg" class="brightness-70" />
+            <img src="./images/profile.jpg" class="brightness-100" />
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Contrast
+            </div>
+            <img src="./images/profile.jpg" class="contrast-90" />
+            <img src="./images/profile.jpg" class="contrast-120" />
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Drop shadow
+            </div>
+            <!--
+                xs sm md xl change size of shadow
+                /:num change opacity 
+             -->
+            <img src="./images/profile.jpg" class="drop-shadow-xl/20" />
+            <img src="./images/profile.jpg" class="drop-shadow-2xl/40" />
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Gray scale
+            </div>
+            <img src="./images/profile.jpg" class="grayscale-50" />
+            <img src="./images/profile.jpg" class="grayscale" />
+            <!-- You can add all filter properties to backdrop by appying backdrop-filterproperty -->
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Back drop
+            </div>
+            <div class="bg-[url('./images/profile.jpg')] h-100 flex items-center justify-center">
+                <div class="bg-white/30 backdrop-blur-none text-white h-3/4 w-3/4 text-center">
+                    Hello everyone
+                </div>
+            </div>
+            <div class="bg-[url('./images/profile.jpg')] h-100 flex items-center justify-center">
+                <div class="bg-white/30 backdrop-blur-sm text-white h-3/4 w-3/4 text-center">
+                    Hello everyone
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
