@@ -1,10 +1,11 @@
 <html>
     <head>
         <title>
-            cursor
+            Image classes
         </title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
+    <body class="bg-cyan-300">
         <div class="w-3/4 grid grid-cols-2 gap-5 m-auto mt-5">
             <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
                 Blur
@@ -28,8 +29,8 @@
                 xs sm md xl change size of shadow
                 /:num change opacity 
              -->
-            <img src="./images/profile.jpg" class="drop-shadow-xl/20" />
             <img src="./images/profile.jpg" class="drop-shadow-2xl/40" />
+            <img src="./images/profile.jpg" class="drop-shadow-2xl drop-shadow-cyan-400/30" />
             <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
                 Gray scale
             </div>
@@ -40,15 +41,30 @@
                 Back drop
             </div>
             <div class="bg-[url('./images/profile.jpg')] h-100 flex items-center justify-center">
-                <div class="bg-white/30 backdrop-blur-none text-white h-3/4 w-3/4 text-center">
+                <div class="bg-white/30 backdrop-blur-none text-black h-3/4 w-3/4 text-center">
                     Hello everyone
                 </div>
             </div>
             <div class="bg-[url('./images/profile.jpg')] h-100 flex items-center justify-center">
-                <div class="bg-white/30 backdrop-blur-sm text-white h-3/4 w-3/4 text-center">
+                <div class="bg-white/30 backdrop-blur-sm text-black h-3/4 w-3/4 text-center">
                     Hello everyone
                 </div>
             </div>
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Mask image
+            </div>
+            <div class="mask-t-from-40% bg-[url(./images/profile.jpg)] h-100"></div>
+            <div class="mask-l-from-50% mask-t-from-50% mask-r-from-50% mask-b-from-50% bg-[url(./images/profile.jpg)] h-100"></div>
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Linear mask
+            </div>
+            <div class="mask-linear-50 mask-linear-from-40% mask-linear-to-80% bg-[url(./images/profile.jpg)] h-100"></div>
+            <div class="-mask-linear-50 mask-linear-from-40% mask-linear-to-80% bg-[url(./images/profile.jpg)] h-100"></div>
+            <div class="col-span-2 bg-green-600 text-white font-medium text-2xl px-5">
+                Radial mask
+            </div>
+            <div class="mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left bg-[url(./images/profile.jpg)] h-100"></div>
+            <div class="mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-top-left bg-[url(./images/profile.jpg)] h-100"></div>
         </div>
     </body>
 </html> 
